@@ -9,6 +9,6 @@
 
 ## Datasets
 
-## Training
+## Scripts
 
 ## Visualization
