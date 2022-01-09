@@ -1,1 +1,1 @@
-# min-char-seq2seq
+# Minimal character-level sequence-2-sequence model
