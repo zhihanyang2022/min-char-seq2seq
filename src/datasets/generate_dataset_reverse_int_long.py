@@ -26,14 +26,14 @@ while len(src_sentences_test) < test_size:
 for src_sentence_test in src_sentences_test:
     assert src_sentence_test not in src_sentences
 
-with open('datasets/reverse_int_long/src_train.ob', 'wb+') as fp:
+with open('reverse_int_long/src_train.ob', 'wb+') as fp:
     pickle.dump(src_sentences, fp)
 
-with open('datasets/reverse_int_long/tgt_train.ob', 'wb+') as fp:
+with open('reverse_int_long/tgt_train.ob', 'wb+') as fp:
     pickle.dump(tgt_sentences, fp)
 
-with open('datasets/reverse_int_long/src_test.ob', 'wb+') as fp:
+with open('reverse_int_long/src_test.ob', 'wb+') as fp:
     pickle.dump(src_sentences_test, fp)
 
-with open('datasets/reverse_int_long/tgt_test.ob', 'wb+') as fp:
+with open('reverse_int_long/tgt_test.ob', 'wb+') as fp:
     pickle.dump(tgt_sentences_test, fp)
