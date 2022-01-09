@@ -1,0 +1,7 @@
+import train_utils
+import seq2seq
+
+train_utils.load_dataset.name = "reverse_int_long"
+train_utils.get_training_hyperparams.num_epochs = 150
+train_utils.get_training_hyperparams.batch_size = 128
+seq2seq.Seq2Seq.use_attention = True
