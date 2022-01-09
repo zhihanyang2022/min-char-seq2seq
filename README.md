@@ -1,1 +1,1 @@
-# Minimal character-level sequence-2-sequence model
+# Minimal character-level seq2seq in PyTorch
