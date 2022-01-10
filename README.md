@@ -7,8 +7,21 @@
 
 ## Requirements
 
+```bash
+pip install gin-config torch numpy matplotlib
+```
+
 ## Datasets
 
+- Reversing 4 digits
+- Reversing 20 digits
+- Summing 2 integers
+
 ## Scripts
+
+```bash
+cd src
+python train.py --expdir=experiments/<dir>
+```
 
 ## Visualization
