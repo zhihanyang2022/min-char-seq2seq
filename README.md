@@ -39,6 +39,6 @@ You can generate the attention matrix of a random example in the test set using:
 python train.py --expdir=reverse_int_long_with_attention --infer
 ```
 
-You can find attention matrix inside the experiment dir:
+You can find attention matrix inside the experiment dir afterwards:
 
 <img src="src/experiments/reverse_int_long_with_attention/attention_matrix.png" width=400>
