@@ -19,15 +19,18 @@ pip install gin-config torch numpy matplotlib
 
 ## Scripts
 
-Format:
+Dataset generation example:
 
 ```bash
-python train.py --expdir=<experiment-dir>
+cd src/datasets
+mkdir reverse_int_long
+python generate_dataset_reverse_int_short.py
 ```
 
-Example:
+Model training example:
 
 ```bash
+cd src
 python train.py --expdir=reverse_int_long_with_attention
 ```
 
