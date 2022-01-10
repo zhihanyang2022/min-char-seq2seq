@@ -66,6 +66,8 @@ if __name__ == "__main__":
         # training and testing loop
 
         acc_test_prev_best = 0
+        
+        train_accs, valid_accs = [], []
 
         for i in range(num_epochs):
 
@@ -79,9 +81,10 @@ if __name__ == "__main__":
                 accs.append(acc_b)
 
             loss = np.mean(losses)
-            acc = np.mean(accs)
+            acc = np.mean(accs); train_accs.append(acc)
 
             loss_test, acc_test = algo.update_networks(input_seqs_test, target_seqs_test, just_do_forward=True)
+            valid_accs.append(acc_test)
 
             if acc_test > acc_test_prev_best:
 
@@ -129,6 +132,13 @@ if __name__ == "__main__":
         model_dir = os.path.join(args.expdir, "model")
         os.makedirs(model_dir, exist_ok=True)
         algo.save(model_dir)
+        
+        print("Saving training and validation stats ...")
+        
+        with open(os.path.join(args.expdir, "train_accs.ob"), "wb+") as fp:
+            pickle.dump(train_accs, fp)
+        with open(os.path.join(args.expdir, "valid_accs.ob"), "wb+") as fp:
+            pickle.dump(valid_accs, fp)
 
     else:
 
