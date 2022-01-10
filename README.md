@@ -17,9 +17,9 @@ pip install gin-config torch numpy matplotlib
 - Reversing 20 digits
 - Summing 2 integers
 
-## Scripts
+## Example workflow
 
-Dataset generation example:
+Step: Generate dataset
 
 ```bash
 cd src/datasets
@@ -27,12 +27,24 @@ mkdir reverse_int_long
 python generate_dataset_reverse_int_short.py
 ```
 
-Model training example:
+Step 2: Create experiment dir and config
+
+```bash
+cd src/experiments
+mkdir reverse_int_long
+touch config.gin
+```
+
+and add details to `config.gin`.
+
+Step 3: Train model:
 
 ```bash
 cd src
 python train.py --expdir=reverse_int_long_with_attention
 ```
+
+Step 4: Wait for training to finish (tokenizer and model will be saved inside experiment dir)
 
 ## Visualization
 
