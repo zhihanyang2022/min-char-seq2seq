@@ -19,11 +19,26 @@ pip install gin-config torch numpy matplotlib
 
 ## Scripts
 
+Format:
+
 ```bash
-cd src
-python train.py --expdir=experiments/<dir>
+python train.py --expdir=<experiment-dir>
+```
+
+Example:
+
+```bash
+python train.py --expdir=reverse_int_long_with_attention
 ```
 
 ## Visualization
 
-<img src="src/experiments/reverse_int_long_with_attention/attention_matrix.png" width=600>
+You can generate the attention matrix of a random example in the test set using:
+
+```bash
+python train.py --expdir=reverse_int_long_with_attention --infer
+```
+
+You can find attention matrix inside the experiment dir:
+
+<img src="src/experiments/reverse_int_long_with_attention/attention_matrix.png" width=400>
