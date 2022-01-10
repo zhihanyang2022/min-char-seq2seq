@@ -48,6 +48,16 @@ Step 4: Wait for training to finish (tokenizer and model will be saved inside ex
 
 ## Visualization
 
+You can plot the training and validation curves using:
+
+```bash
+python plot.py --expdir reverse_int_long_with_attention
+```
+
+You can find the plot inside the experiment dir afterwards:
+
+TODO
+
 You can generate the attention matrix of a random example in the test set using:
 
 ```bash
