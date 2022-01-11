@@ -56,7 +56,9 @@ python plot.py --expdir reverse_int_long_with_attention
 
 You can find the plot inside the experiment dir afterwards:
 
-TODO
+Without attention          |  With attention
+:-------------------------:|:-------------------------:
+![](src/experiments/reverse_int_long_without_attention/training_curve.png)  |  ![](src/experiments/reverse_int_long_without_attention/training_curve.png)
 
 You can generate the attention matrix of a random example in the test set using:
 
