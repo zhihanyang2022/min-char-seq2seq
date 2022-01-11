@@ -22,5 +22,5 @@ plt.legend()
 plt.xlabel("Epochs")
 plt.ylabel("Accuracy (Char-Level)")
 
-plt.savefig("training_curve.png", dpi=300)
+plt.savefig(os.path.join(args.expdir, "training_curve.png"), dpi=300)
 
