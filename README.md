@@ -41,7 +41,7 @@ Step 3: Train model:
 
 ```bash
 cd src
-python train.py --expdir=reverse_int_long_with_attention
+python train.py --expdir=experiments/reverse_int_long_with_attention
 ```
 
 Step 4: Wait for training to finish (tokenizer and model will be saved inside experiment dir)
